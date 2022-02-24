@@ -1,0 +1,26 @@
+/**
+ * 
+ */
+package com.example.demo;
+
+/**
+ * @author siddi
+ *
+ */
+public class Teacher {
+
+	//Properties
+	private String hair;
+	private int page;
+	private String pname;
+	private char pgender;
+	private double weight;
+	private double heightInInches;
+	/**
+	 * 
+	 */
+	public Teacher() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

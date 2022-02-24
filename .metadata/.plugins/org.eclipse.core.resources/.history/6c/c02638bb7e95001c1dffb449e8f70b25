@@ -1,0 +1,19 @@
+/**
+ * 
+ */
+package com.example.demo;
+
+/**
+ * @author siddi
+ *
+ */
+public class MTA {
+
+	/**
+	 * 
+	 */
+	public MTA() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

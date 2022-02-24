@@ -1,0 +1,25 @@
+package com.example.demo;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ConfigurableApplicationContext;
+
+@SpringBootApplication
+public class RevisionApplication {
+
+	public static void main(String[] args) {
+		ConfigurableApplicationContext context = SpringApplication.run(RevisionApplication.class, args);
+		Student s1 = context.getBean(Student.class);
+		//Student s2 = context.getBean(Student.class);
+		Teacher t1 = context.getBean(Teacher.class);
+		School school = context.getBean(School.class); //parent class
+		school.setDistrictnum(13);
+		school.setSlocation("Brooklyn");
+		school.setSname("Thomas Edison CTE High School");
+		s1.setSchool(school);
+		t1.setSchool(school);
+		s1.getSchool().display();
+		t1.schoolinfo();
+	}
+
+}
